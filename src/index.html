@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Ремонт квартир, домов и офисов</title>
+
+    <meta name="description" content="Специалист по ремонту квартир" />
+
+    <link
+      type="image/x-icon"
+      href="icons/favicons/android-chrome-144x144.png"
+      rel="shortcut icon"
+    />
+    <link
+      type="Image/x-icon"
+      href="icons/favicons/android-chrome-144x144.png"
+      rel="icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icons/favicons/android-chrome-144x144.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicons/android-chrome-144x144.png/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicons/android-chrome-144x144.png/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="icons/favicons/android-chrome-144x144.png/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="icons/favicons/android-chrome-144x144.png/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- Первая секция -->
+    <section id="about me" class="main-section">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Ограничивающий контейнер нав меню -->
+      <div class="container main-section__nav-container">
+        <!-- Навигационное меню -->
+        <header class="main-section__header">
+          <a href="#"
+            ><img
+              class="main-section__logo"
+              src="icons/logo-white.svg"
+              alt="logotype"
+          /></a>
+        </header>
+        <nav class="main-section__nav nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__list-item"><a href="#about me">Обо мне</a></li>
+            <li class="nav-menu__list-item">
+              <a href="#gallery">Галерея работ</a>
+            </li>
+            <li class="nav-menu__list-item">
+              <a href="#prices">Расценки на ремонт</a>
+            </li>
+            <li class="nav-menu__list-item">
+              <a href="#">Заказать ремонт</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container main-section__content-container">
+        <!-- Левая часть первой секции -->
+        <img src="img/Мастер1.png" alt="main-foto" />
+        <div class="right-wrapper">
+          <!-- Иконки -->
+          <div class="right-wrapper__icons icons">
+            <div class="icons__item"><i class="fa-brands fa-skype"></i></div>
+            <div class="icons__item"><i class="fa-brands fa-vk"></i></div>
+            <div class="icons__item"><i class="fa-brands fa-telegram"></i></div>
+            <div class="icons__item">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+          <!-- Заголовок -->
+          <h1 class="right-wrapper__title title">
+            Опытный мастер с индивидуальным подходом к каждому клиенту
+            <hr class="title__hr" />
+          </h1>
+          <!-- Текст-->
+          <p class="right-wrapper__text">
+            Я понимаю, что каждый ремонт — это уникальная история. И поэтому
+            стараюсь учитывать все ваши пожелания и создавать пространство,
+            соответствующее вашему стилю и потребностям. Бесплатная консультация
+            и смета на ремонт вашей мечты!
+          </p>
+          <!-- Кнопки -->
+          <div class="right-wrapper__button buttons">
+            <!-- Обычная кнопка -->
+            <button class="buttons__main-btn">Заказать ремонт</button>
+            <!-- Иконка с текстом -->
+            <div class="right-wrapper__icon-btn buttons__icon-btn">
+              <img src="icons/Иконка чата 1.svg" alt="chat" />
+              <p>Есть<br />вопросы?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Вторая секция -->
+    <section id="gallery" class="second-section">
+      <div class="container second-section__container">
+        <!-- Заголовок -->
+        <h2 class="second-section__title title">
+          Мои работы
+          <!--  <hr class="title__hr" /> -->
+        </h2>
+        <!-- Карточки -->
+      </div>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/ren4.jpg" class="d-block w-100" alt="ren1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/ren2.jpg" class="d-block w-100" alt="ren2" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/ren3.jpg" class="d-block w-100" alt="ren3" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/ren1.jpg" class="d-block w-100" alt="ren4" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/ren5.jpg" class="d-block w-100" alt="ren5" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Третья секция -->
+    <section id="prices" class="third-section">
+      <div class="container third-section__container">
+        <!-- Левая обертка -->
+        <h4 class="third-section__title title">Расценки на ремонт</h4>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ремонт комнаты</h5>
+              <p class="card-text">
+                1. Это более длинная карта С вспомогательным текстом ниже в
+                качестве естественного перехода к дополнительному контенту. Этот
+                контент немного длиннее <br />2. Это более длинная карта С
+                вспомогательным текстом ниже в качестве естественного перехода к
+                дополнительному контенту. Этот контент немного длиннее. <br />3.
+                Это более длинная карта С вспомогательным текстом ниже в
+                качестве естественного перехода к дополнительному контенту. Этот
+                контент немного длиннее.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">
+                Это более длинная карта С вспомогательным текстом ниже в
+                качестве естественного перехода к дополнительному контенту. Этот
+                контент немного длиннее.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">
+                Это более длинная карта С вспомогательным текстом ниже в
+                качестве естественного перехода к дополнительному контенту.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок карточки</h5>
+              <p class="card-text">
+                Это более длинная карта С вспомогательным текстом ниже в
+                качестве естественного перехода к дополнительному контенту. Этот
+                контент немного длиннее.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопки -->
+      <div class="right-wrapper__button buttons">
+        <!-- Обычная кнопка -->
+        <button class="buttons__main-btn third-button">Заказать ремонт</button>
+        <!-- Иконка с текстом -->
+        <div class="right-wrapper__icon-btn buttons__icon-btn third-icon-btn">
+          <img src="icons/Иконка чата 1.svg" alt="chat" />
+          <p>Есть<br />вопросы?</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img src="img/footervar2.png" alt="гриф" class="footer__img" />
+      <div class="footer__wrapper">
+        <h5 class="footer__title title title_end">
+          Закажи сейчас ремонт и<br />получи скидку 10%
+        </h5>
+
+        <!-- Иконки -->
+        <div class="footer icons end_icons">
+          <div class="icons__item"><i class="fa-brands fa-skype"></i></div>
+          <div class="icons__item"><i class="fa-brands fa-vk"></i></div>
+          <div class="icons__item">
+            <a href="https://t.me/Dmitryluk">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+
+          <div class="icons__item">
+            <a href="https://www.instagram.com/developmentsite/?next=%2F">
+              <i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/56ef624469.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

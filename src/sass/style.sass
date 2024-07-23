@@ -1,0 +1,613 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box   
+
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-display: swap
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-display: swap
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "MontserratT"
+    font-style: normal
+    scroll-behavior: smooth
+
+$color-telegram : #0088cc
+$color-instagram: #E1306C
+$color-vk: #4C75A3
+$color-skype: #00aff0
+$color-jeans: #415b9c
+$color-blue: blue
+
+
+.container
+    position: relative
+    max-width: 1140px
+    margin: 0 auto
+.main-section
+    position: relative
+    min-height: 800px
+    background: $color-jeans
+    padding-top: 16px
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row 
+        justify-content: space-between
+        height: 69px
+        align-items: center
+    &__logo
+        position: relative
+        width: 74px
+        bottom: 6px
+        color: white
+    &__content-container
+        position: relative
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-content: center
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row 
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        font-weight: bold
+
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: white
+            
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 0
+       
+
+.right-wrapper
+    width: 372px
+    position: absolute
+    top: 150px
+    left: -50px
+    z-index: 1
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+    &__text
+        font-size: 22px
+        margin-bottom: 33px
+.icons
+    display: flex
+    flex-direction: row
+    z-index: 5
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+        i
+            font-size: 25px
+.fa-telegram 
+    color: $color-telegram 
+.fa-square-instagram
+    color: $color-instagram
+.fa-vk
+    color: $color-vk
+.fa-skype
+    color: $color-skype
+           
+.title
+    font-size: 52px
+    position: relative
+    font-weight: bold
+    &__hr
+        width: 65px
+        position: absolute
+        bottom: 0px
+        margin: 0px
+        border: none
+        border-top: 1px solid black
+       
+.buttons
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    margin-bottom: 20px
+    &__main-btn
+        margin-right: 32px
+        width: 200px
+        height: 60px
+        background: $color-jeans
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        border: none
+        font-size: 18px
+        font-weight: bold
+        color: white
+
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+        img
+            margin-right: 12px
+    &__text
+        font-size: 16px
+
+.second-section
+    overflow: hidden
+    min-height: 700px
+    &__container
+        padding-top: 32px
+        position: relative
+    &__title
+        margin-bottom: 40px
+        text-align: center
+.carousel-item
+    img
+        height: 650px
+        object-fit: cover   
+
+.third-section
+    position: relative
+    min-height: 590px
+    background: #E5E5E5
+    overflow: hidden
+    z-index: 0
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        padding-left: 167px
+        padding-top: 46px
+    &__title
+        margin-bottom: 40px
+        text-align: center
+    &__right-wrapper
+        max-width: 480px
+    &__text
+        font-size: 18px
+        margin-bottom: 30px
+.title__hr_top
+    bottom: 75px 
+.card-body
+    border: 3px solid $color-jeans
+    border-radius: 10px
+    background: #ffeb5c
+
+.footer
+    &__img
+        position: absolute     
+    &__container
+        min-height: 406px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__wrapper
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding-top: 180px
+    &__title
+        margin-bottom: 20px
+    
+.upbtn 
+    z-index: 9999
+    width: 70px
+    height: 70px
+    color: #FFF
+    position: fixed
+    bottom: 20px
+    right: 20px
+    cursor: pointer
+    border:3px solid #BFE2FF
+    border-radius:50%
+    transform: scale(0)
+    transition: all .7s ease-in-out
+    background-position: center center
+    background-repeat: no-repeat
+    background-color: $color-jeans
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MS44NTggNDkxLjg1OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkxLjg1OCA0OTEuODU4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5MS44NTgsNDQyLjQ2MWMwLDEzLjkzMS0xMS4yOTMsMjUuMjI0LTI1LjIyNCwyNS4yMjRMMjQ1LjkzLDM3My4wOTdMMjUuMjI0LDQ2Ny42ODYgICAgQzExLjI5Miw0NjcuNjg2LDAsNDU2LjM5MiwwLDQ0Mi40NjFMMjI3LjAxMSwzMi41OGMwLDAsMTguOTE4LTE4LjkxOCwzNy44MzQsMEMyODMuNzY0LDUxLjQ5OSw0OTEuODU4LDQ0Mi40NjEsNDkxLjg1OCw0NDIuNDYxeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)
+
+.upbtn:hover 
+    transform: scale(1.2)!important
+    background-color: #6ce2ea
+
+
+
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .main-section
+        min-height: 690px
+    .left-wrapper
+        img
+            width: 750px
+    .right-wrapper
+        right: 39px
+        top: 121px
+
+    .second-section
+        min-height: 600px
+        &__cards-box
+            display: flex
+            justify-content: center
+    .icons-item__img 
+        margin-right: 12px
+        margin-left: 14px
+    .third-section__right-wrapper
+        max-width: 450px
+    .third-section__left-title
+        top: -50px
+    .footer__img 
+        left: -287px
+   
+
+@media (max-width: 991px)
+    .main-section
+        min-height: 530px
+        &__first-elipse
+            top: 20px
+            right: 6px 
+        &__second-elipse 
+            top: 409px 
+
+    .container
+        width: 720px
+
+    .left-wrapper
+        img
+            width: 550px
+    .right-wrapper
+        right: -42px
+        top: 12px
+        img
+            width: 52px
+                
+        &__title
+            font-size: 60px
+            margin-bottom: 14px
+    .second-section
+        min-height: 500px
+        &__container
+            padding-top: 28px  
+    .buttons
+        &__main-btn 
+            position: absolute
+            margin-right: 7px
+            right: 211px
+            width: 183px
+            height: 52px
+            top: 202px
+        &__icon-btn 
+            // display: inline-flex
+            //align-items: center
+            //flex-direction: column
+            position: absolute
+            top: 202px 
+            right: 43px
+    
+        &__img 
+            height: 200px
+            right: 100px
+        &__text 
+            font-size: 26px
+            top: 89px
+            right: -92px
+        &__cards-item_ukul
+            position: absolute
+            right: 93px
+            top: 19px
+       
+    .icons-item
+        &__img 
+            margin-right: 12px
+            margin-left: 11px
+            width: 55px
+        &__text
+            font-size: 14px
+            
+    .title 
+        font-size: 56px
+    .third-section
+        min-width: 500px
+        &__second-elipse
+            top: 295px 
+        &__left-title 
+            display: none
+        &__right-title 
+            margin-bottom: 57px
+            top: 14px
+        &__text 
+            font-size: 16px
+            margin-bottom: 0px
+        &__right-wrapper
+            max-width: 600px
+        &__container
+            justify-content: flex-start
+            padding-left: 42px
+            padding-top: 20px
+    .title__hr
+        top: 56px
+
+    .third-button
+        top: 506px 
+        right: 378px
+    .third-icon-btn
+        top: 502px
+        right: 133px
+    .footer
+        &__img 
+            left: -407px
+            width: 1628px
+           
+        &__title
+            margin-bottom: 10px
+        &__container
+            min-height: 210px
+        &__wrapper 
+            display: flex
+            align-items: center
+            flex-direction: column
+    
+    
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .title
+        font-size: 46px     
+    .nav-menu
+        position: fixed
+        top: 0
+        right: -100%
+        height: 100vh
+        width: 50%
+        background: $color-blue
+        z-index: 20
+        transition: 1s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+        &__list-item
+            margin-right: 0
+            font-size: 20px
+    .hamburger
+        width: 30px
+        position: fixed
+        top: 40px
+        right: 30px
+        height: 14px
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        right: 0
+                
+    .main-section
+        min-height: 500px
+        &__second-elipse 
+            top: 371px 
+        &__first-elipse
+            top: 37px
+            right: -44px
+            width: 170px
+            height: 170px
+        
+
+    .left-wrapper
+        img
+            width: 350px
+
+    .right-wrapper
+        right: -87px
+        top: 12px
+        
+        &__text
+            position: absolute
+            top: 100px
+    .buttons
+        &__main-btn
+            top: 311px
+            right: 291px
+        &__icon-btn
+            top: 311px
+            right: 92px
+    .title__hr 
+        top: 47px
+    
+    .second-section
+        min-height: 500px
+        &__container
+            padding-top: 28px
+        &__title
+            margin-bottom: 20px
+            top: -7px
+            right: -139px
+    .cards-item
+        &__img
+            height: 330px
+            right: 150px
+        &__text 
+            font-size: 40px
+            top: 142px
+            right: -75px
+    .third-section
+          min-height: 550px
+
+    .third-button
+          top: 464px
+          right: 287px
+    .third-icon-btn 
+          top: 459px
+          right: 62px
+
+    .footer
+        &__container
+            min-height: 251px
+        &__img
+            left: -190px
+            width: 371px
+            top: -15px
+        &__title
+            left: 20px
+    .icons
+        margin-left: 20px
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+    .main-section
+        min-height: 1022px
+        min-width: 700px
+        &__logo
+            width: 108px
+            position: absolute
+            right: 517px
+            top: 1px
+    .title
+        position: absolute
+        font-size: 4em
+        top: 150px
+        right: 245px
+        width: 325px
+        margin: 0
+        &__hr
+            top: 66px
+
+    .right-wrapper 
+        width: 562px 
+        &__text
+            position: absolute
+            top: 293px
+            width: 290px
+            font-size: 1.5em
+            margin: 0
+             
+    .left-wrapper
+        z-index: 1
+        &__img
+            display: none
+    .buttons
+        &__main-btn
+            width: 11em
+            height: 3.5em
+            font-size: 1.5em
+            top: 492px
+            right: 301px
+        &__icon-btn 
+            top: 634px 
+            right: 336px
+            font-size: 1.5em
+    
+    .second-section 
+        min-width: 700px
+        &__container 
+            padding-top: 160px
+        &__title
+            top: 40px
+            right: 200px
+        &__text
+            font-size: 1.5em
+       
+    .third-section
+        min-height: 900px
+        min-width: 700px
+        &__text
+            font-size: 1.5em
+            width: 550px
+            padding-top: 177px
+            padding-left: 34px
+        &__left-title
+            display: none
+    .third-button
+        top: 734px
+        right: 289px
+    .third-icon-btn
+        top: 740px
+        right: 44px
+
+    .footer
+        &__container
+            min-width: 473px
+        &__img
+            left: -45px
+            top: -50px
+            width: 292px
+    .title_end
+        width: 500px
+        font-size: 3em
+        left: 200px
+        top: 116px
+
+    .end_icons
+        position: absolute
+        top: 57px
+        right: -69px
+
+
+
+
+
+
+
+        
+
+
+
+    
+
+    
+
+        
+
+    
+
+
+
+
+
+
+
